@@ -18,12 +18,38 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
-.intro-header {
+.navbar {
+    display: flex;
+    justify-content: flex-end; 
+}
+
+.navbar a {
+    display: block;
+    color: var(--main-white);
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    font-size: 2.1rem;
+    font-weight: 600;
+}
+
+.navbar a:hover {
+    color:white;
+}
+
+.intro {
     position: relative;
     width: 100%;
     height: 700px;
-    background: url("vic_bali.jpg") no-repeat scroll right top;
+    background: url("borobudur_1.jpg") no-repeat scroll right top;
     background-size: cover;
 }
 
@@ -33,20 +59,35 @@ body {
     left: 0;
     width: 100%;
     height: 700px;
-    background-color: hsla(239, 0%, 50%, 0.5);
+    background-color: hsla(239, 0%, 70%, 0.3);
+}
+
+.intro-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.background-overlay  h1 {
+.intro-text  h1 {
     font-size: 6rem;
     color: var(--main-white);
     padding: 0 auto;
   }
 
-  .background-overlay h2 {
+  .intro-text h2 {
     font-size: 4.2rem;
     color: var(--main-white);
+  }
+
+  .logo {
+      width: 278px;
+      height: 100px; 
+      display: block;
+      z-index: 10;
   }
