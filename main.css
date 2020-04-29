@@ -1,3 +1,52 @@
-.small_img {
-    width: 200px;
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+  }
+
+html {
+    font-size: 62.5%;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.intro-header {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    background: url("vic_bali.jpg") no-repeat scroll right top;
+    background-size: cover;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 700px;
+    background-color: hsla(239, 0%, 50%, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.background-overlay  h1 {
+    font-size: 6rem;
+    color: var(--main-white);
+    padding: 0 auto;
+  }
+
+  .background-overlay h2 {
+    font-size: 4.2rem;
+    color: var(--main-white);
+  }
