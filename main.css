@@ -9,6 +9,26 @@ html {
     font-size: 62.5%;
 }
 
+@media (max-width: 1200px) {
+    html {
+      font-size: 60%;
+    }
+  }
+  
+  
+  @media (max-width: 980px) {
+    html {
+      font-size: 58%;
+    }
+  }
+  
+  
+  @media (max-width: 460px) {
+    html {
+      font-size: 55%;
+    }
+  }
+
 * {
     margin: 0;
     padding: 0;
@@ -33,6 +53,12 @@ body {
 .navbar {
     display: flex;
     justify-content: flex-end; 
+}
+
+@media (max-width: 460px) { .header, .navbar {
+    flex-direction: column;
+    
+}
 }
 
 .navbar a {
@@ -81,11 +107,13 @@ body {
     font-size: 6rem;
     color: var(--main-white);
     padding: 0 auto;
+    text-align: center;
   }
 
   .intro-text h2 {
     font-size: 4.2rem;
     color: var(--main-white);
+    text-align: center;
   }
 
   .logo {
@@ -96,10 +124,10 @@ body {
   }
   .videoclip-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
       grid-gap: 4rem;
       width: 100%;
-      max-width: 1280px;
+      max-width: 900px;
       margin: 0 auto;
       margin-bottom: 6rem;
       margin-top: 6rem;
@@ -107,7 +135,7 @@ body {
 
   .videoclip-grid iframe {
       width: 100%;
-      height: 400px;
+      height: 245px;
       object-fit: cover;
   }
 
