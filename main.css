@@ -16,7 +16,10 @@ html {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #cccccc;
 }
+
+
 
 .header {
     display: flex;
@@ -49,7 +52,7 @@ body {
     position: relative;
     width: 100%;
     height: 700px;
-    background: url("borobudur_1.jpg") no-repeat scroll right top;
+    background: url("vic_tanjung_puting.jpg") no-repeat scroll right top;
     background-size: cover;
 }
 
@@ -91,3 +94,28 @@ body {
       display: block;
       z-index: 10;
   }
+  .videoclip-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      grid-gap: 4rem;
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      margin-bottom: 6rem;
+      margin-top: 6rem;
+  }
+
+  .videoclip-grid iframe {
+      width: 100%;
+      height: 400px;
+      object-fit: cover;
+  }
+
+  .projects h1 {
+        font-size: 6rem;
+        color: var(--main-white);
+        margin-top: 6rem;
+        padding: 30px auto;
+        text-align: center;
+      }
+  
