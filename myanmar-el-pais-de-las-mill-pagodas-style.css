@@ -61,11 +61,7 @@ body {
     justify-content: flex-end; 
 }
 
-@media (max-width: 460px) { .header, .navbar {
-    flex-direction: column;
-    
-}
-}
+
 
 .navbar a {
     display: block;
