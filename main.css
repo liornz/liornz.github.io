@@ -83,7 +83,7 @@ body {
     position: relative;
     width: 100%;
     height: 700px;
-    background: url("borobudur_1.jpg") no-repeat scroll center;
+    background: url("vic_tanjung_puting.jpg") no-repeat scroll center;
     background-size: cover;
 }
 
@@ -175,7 +175,7 @@ body {
 
   .projects h1 {
         font-size: 6rem;
-        color: var(--main-white);
+        color: var(--main-gray);
         margin-top: 6rem;
         padding: 30px auto;
         text-align: center;
