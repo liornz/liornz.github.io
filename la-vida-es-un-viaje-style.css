@@ -61,11 +61,6 @@ body {
     justify-content: flex-end; 
 }
 
-@media (max-width: 460px) { .header, .navbar {
-    flex-direction: column;
-    
-}
-}
 
 .navbar a {
     display: block;
@@ -104,7 +99,7 @@ iframe {
 @media (max-width: 540px) { iframe {
   width: 300px;
   height: 171px;
-  margin: 350px auto 100px auto;
+  margin: 250px auto 100px auto;
 }
 
 }
