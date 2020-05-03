@@ -83,7 +83,7 @@ body {
   height: 700px;
   background: url("vic_bali.jpg") no-repeat scroll center;
   background-size: cover;
-}
+} 
 
 .background-overlay {
   position: absolute;
