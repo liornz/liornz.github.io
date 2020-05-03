@@ -35,7 +35,7 @@ html {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #ebebeb;
+  background-color: #ffffff;
 }
 
 .header {
@@ -137,14 +137,15 @@ body {
 
 .videoclip-tile {
   display: block;
-  background-color: var(--main-gray);
+  background-color: var(--main-white);
   text-decoration: none;
-  color: var(--main-white);
+  color: var(--main-blue);
 }
 
 .videoclip-tile:hover {
   transform: scale(1.1);
   transition: transform 0.5s ease-in-out;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .videoclip-tile img {
@@ -155,8 +156,12 @@ body {
 }
 
 .videoclip-desc {
+  display: flex;
+  flex-direction: column;
+  height: 100px;
   padding: 10px 20px;
-  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .videoclip-desc h3 {
@@ -170,7 +175,7 @@ body {
 
 .projects h1 {
   font-size: 6rem;
-  color: var(--main-gray);
+  color: var(--main-blue);
   margin-top: 6rem;
   padding: 30px auto;
   text-align: center;
