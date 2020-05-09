@@ -9,11 +9,12 @@ function count () {
 }
 console.log("counter1");
 var counter1 = count();
-counter1 ();
-counter1 ();
-counter1 ();
-counter1 ();
-counter1 ();
+counter1();
+counter1();
+counter1();
+counter1();
+counter1();
+counter1();
 
 console.log("counter2");
 var counter2 = count();
