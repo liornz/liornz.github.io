@@ -12,8 +12,11 @@ var counter1 = count();
 counter1 ();
 counter1 ();
 counter1 ();
+counter1 ();
+counter1 ();
 
 console.log("counter2");
 var counter2 = count();
 counter2 ();
-
+counter2 ();
+counter2 ();
