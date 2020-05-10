@@ -21,3 +21,9 @@ var counter2 = count();
 counter2 ();
 counter2 ();
 counter2 ();
+
+console.log("=================")
+var i = 10;
+while (i--) {
+    console.log(`i = ${i}`);
+}
