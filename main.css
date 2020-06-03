@@ -197,11 +197,33 @@ body {
   max-width: 1200px;
 }
 
+@media (max-width: 460px) {
+  #identity {
+    flex-direction: column;
+  }
+}
+
 #vic-image {
 flex: 50%;
 display: block;
 max-width: 50%;
 object-fit: cover;
+}
+
+@media (max-width: 460px) {
+  #vic-image {
+    flex: 100%;
+    max-height: 300px;
+    max-width: 100%;
+    
+  }
+}
+
+@media (max-width: 460px) {
+  #presentation-text {
+    flex: 100%;
+    max-width: 100%;
+  }
 }
 
 #presentation-text {
@@ -220,11 +242,11 @@ object-fit: cover;
   margin-left: auto;
 }
 
-#presentation-video > img {
+#presentation-video > iframe {
   display: block;
   margin-right: auto;
   margin-left: auto;
-  
-  max-width: 50%;
-  object-fit: contain;
+  width: 700px;
+  height: 400px;
+  max-width: 100%;
 }
