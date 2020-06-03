@@ -173,16 +173,54 @@ body {
 .videoclip-desc h3 {
   font-size: 2.5rem;
   font-weight: 600;
+  text-align: center;
 }
 
 .videoclip-desc p {
   font-size: 1.5rem;
+  text-align: center;
 }
 
-.projects h1 {
+#destinos h1 {
   font-size: 6rem;
   color: var(--main-blue);
   margin-top: 6rem;
   padding: 30px auto;
   text-align: center;
+}
+
+#identity {
+  margin: 6rem auto 6rem auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 50px 0px;
+  width: 90%;
+  max-width: 1200px;
+  background-color: cornflowerblue; 
+}
+
+#vic-image {
+display: block;
+height: 400px;
+max-width: 100%;
+background-color: crimson;
+object-fit: cover;
+}
+
+#presentation-text {
+  font-size: 4rem;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: crimson;
+  padding: 2rem;
+
+}
+
+#presentation-video {
+  display: block;
+  grid-column: 1 / 3;
+  margin-right: auto;
+  margin-left: auto;
+  height: 400px;
+  max-width: 100%;
+  object-fit: contain;
 }
