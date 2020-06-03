@@ -44,42 +44,44 @@ body {
   background-color: #ffffff;
 }
 
-.header {
+#header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
+  top: -100px;
+  background-color: hsla(0, 0%, 0%, 0.5);
+  transition: top 0.3s;
 }
 
 @media (max-width: 980px) {
-  .header {
+  #header {
     flex-direction: column;
   }
 }
 
-.navbar {
+#navbar {
   display: flex;
   justify-content: flex-end;
 }
 
 @media (max-width: 460px) {
-  .header, .navbar {
+  #header, #navbar {
     flex-direction: column;
   }
 }
 
-.navbar a {
+#navbar a {
   display: block;
-  color: var(--main-white);
+  color: #cfcfcf;
   text-decoration: none;
   padding: 1.5rem 2rem;
   font-size: 2.1rem;
   font-weight: 600;
 }
 
-.navbar a:hover {
+#navbar a:hover {
   color: white;
 }
 
@@ -182,6 +184,14 @@ body {
 }
 
 #destinos h1 {
+  font-size: 6rem;
+  color: var(--main-blue);
+  margin-top: 6rem;
+  padding: 30px auto;
+  text-align: center;
+}
+
+#sobre-mi h1 {
   font-size: 6rem;
   color: var(--main-blue);
   margin-top: 6rem;
