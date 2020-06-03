@@ -89,7 +89,7 @@ body {
   height: 700px;
   background: url("vic_bali.jpg") no-repeat scroll center;
   background-size: cover;
-} 
+}
 
 .background-overlay {
   position: absolute;
@@ -197,29 +197,28 @@ body {
   max-width: 1200px;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 680px) {
   #identity {
     flex-direction: column;
   }
 }
 
 #vic-image {
-flex: 50%;
-display: block;
-max-width: 50%;
-object-fit: cover;
+  flex: 50%;
+  display: block;
+  max-width: 50%;
+  object-fit: cover;
 }
 
-@media (max-width: 560px) {
+@media (max-width: 680px) {
   #vic-image {
     flex: 100%;
     max-height: 300px;
     max-width: 100%;
-    
   }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 680px) {
   #presentation-text {
     flex: 100%;
     max-width: 100%;
@@ -228,12 +227,20 @@ object-fit: cover;
 
 #presentation-text {
   flex: 50%;
-  font-size: 3rem;
+  font-size: 2rem;
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   background-color: lightgrey;
   padding: 2rem;
-
 }
+
+#presentation-text h3 {
+  text-align: center;
+}
+
+#presentation-text p {
+  text-align: justify;
+}
+
 
 #presentation-video {
   width: 90%;
@@ -242,7 +249,7 @@ object-fit: cover;
   margin-left: auto;
 }
 
-#presentation-video > iframe {
+#presentation-video>iframe {
   display: block;
   margin-right: auto;
   margin-left: auto;
