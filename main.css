@@ -44,45 +44,55 @@ body {
   background-color: #ffffff;
 }
 
-#header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
+.topnav {
   position: fixed;
+  width: 100%;
   top: -100px;
   background-color: hsla(0, 0%, 0%, 0.5);
   transition: top 0.3s;
 }
 
-@media (max-width: 980px) {
-  #header {
-    flex-direction: column;
-  }
+.topnav .logo {
+  float: left;
 }
 
-#navbar {
-  display: flex;
-  justify-content: flex-end;
-}
-
-@media (max-width: 460px) {
-  #header, #navbar {
-    flex-direction: column;
-  }
-}
-
-#navbar a {
-  display: block;
+.topnav-right a {
+  float: right;
+  transform: translate(0%, 45%);
   color: #cfcfcf;
   text-decoration: none;
   padding: 1.5rem 2rem;
   font-size: 2.1rem;
   font-weight: 600;
+  text-align: center;
 }
 
-#navbar a:hover {
+.topnav-right a:hover {
   color: white;
+}
+
+.topnav-right.mobile a {
+  float: none;
+  display: block;
+}
+
+
+
+.topnav .icon {
+  display: none;
+  float: right;
+  font-size: 36px;
+  color: white;
+  padding: 10px;
+}
+
+@media (max-width: 800px) {
+  .topnav-right a {
+    display: none;
+  }
+  .topnav .icon {
+    display: block;
+  }
 }
 
 .intro {
@@ -99,7 +109,7 @@ body {
   left: 0;
   width: 100%;
   height: 700px;
-  background-color: hsla(239, 0%, 70%, 0.3);
+  background-color: hsla(239, 0%, 70%, 0.1);
 }
 
 .intro-text {
@@ -250,7 +260,6 @@ body {
 #presentation-text p {
   text-align: justify;
 }
-
 
 #presentation-video {
   width: 90%;
