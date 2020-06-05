@@ -9,10 +9,10 @@ function scrollFunction() {
   }
 
   function mobileMenu() {
-    var x = document.getElementById("topnavlinks");
-    if (x.className === "topnav-right") {
+    var x = document.getElementById("topnavbar");
+    if (x.className === "topnav") {
       x.className += " mobile";
     } else {
-      x.className = "topnav-right";
+      x.className = "topnav";
     }
   }
