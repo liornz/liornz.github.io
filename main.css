@@ -80,9 +80,8 @@ body {
 }
 
 .topnav.mobile .logo {
-  position: absolute;
-  top: 0;
-  left: 0;
+float: none;
+display: block;
 }
 
 .topnav.mobile .icon {
@@ -94,6 +93,7 @@ body {
 .topnav.mobile .topnav-right a {
   display: block;
   float: none;
+  transform: translate(0%, 0%);
 }
 
 @media (max-width: 800px) {
