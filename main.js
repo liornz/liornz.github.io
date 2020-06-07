@@ -1,4 +1,4 @@
-window.onscroll = function() {scrollFunction()};
+// window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
     if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
@@ -7,6 +7,18 @@ function scrollFunction() {
       document.getElementById("topnavbar").style.top = "-100px";
     }
   }
+
+  var prevScrollpos = window.pageYOffset;
+  window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+      document.getElementById("topnavbar").style.top = "30px";
+    } else {
+      document.getElementById("topnavbar").style.top = "-100px";
+    }
+    prevScrollpos = currentScrollPos;
+  }
+
 
   function mobileMenu() {
     var x = document.getElementById("topnavbar");
