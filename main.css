@@ -42,7 +42,7 @@ html {
 body {
   font-family: Roboto, sans-serif;
   background-color: #ffffff;
-  background-image: url(mapa_verde.jpg);
+  background-image: url(mapa_verde_50.jpg);
 }
 
 .fab {
@@ -321,16 +321,38 @@ margin-left: 10rem;
 margin-top: 5rem;
 }
 
-.footer .logo {
+.site-id .logo {
   width: 27.8rem;
   height: 10.0rem;
   display: block;
 
 }
 
-.footer p {
+.site-id p {
   font-size: 2rem;
   margin-left: 20px;
-  color: #f0f0f0;
+  color: #cfcfcf;
   font-family: Caveat, Roboto, sans-serif;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  float: left;
+  margin-top: 5rem;
+  margin-left: 10rem;
+  margin-right: 5rem;
+}
+
+.links a {
+  font-size: 1.8rem;
+  font-weight: 400;
+  padding: 2rem;
+  text-align: left;
+  text-decoration: none;
+  color: #cfcfcf;
+}
+
+.links a:hover {
+  color: white;
 }
