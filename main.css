@@ -335,7 +335,7 @@ margin-top: 5rem;
   font-family: Caveat, Roboto, sans-serif;
 }
 
-.links {
+.links, .social {
   display: flex;
   flex-direction: column;
   float: left;
@@ -355,4 +355,10 @@ margin-top: 5rem;
 
 .links a:hover {
   color: white;
+}
+
+.social a {
+  color: #cfcfcf;
+  font-size: 30px;
+  margin: 2rem 1rem;
 }
