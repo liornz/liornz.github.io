@@ -42,6 +42,7 @@ html {
 body {
   font-family: Roboto, sans-serif;
   background-color: #ffffff;
+  background-image: url(mapa_verde.jpg);
 }
 
 .fab {
@@ -303,4 +304,33 @@ display: block;
   width: 700px;
   height: 400px;
   max-width: 100%;
+}
+
+.footer {
+  height: 400px;
+  width: 100%;
+  background-color: black;
+  color: white;
+}
+
+.site-id {
+display: flex;
+flex-direction: column;
+float: left;
+margin-left: 10rem;
+margin-top: 5rem;
+}
+
+.footer .logo {
+  width: 27.8rem;
+  height: 10.0rem;
+  display: block;
+
+}
+
+.footer p {
+  font-size: 2rem;
+  margin-left: 20px;
+  color: #f0f0f0;
+  font-family: Caveat, Roboto, sans-serif;
 }
