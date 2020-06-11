@@ -307,18 +307,10 @@ display: block;
 }
 
 .footer {
-  min-height: 400px;
+  min-height: 300px;
   width: 100%;
   background-color: black;
   color: white;
-}
-
-.site-id {
-display: flex;
-flex-direction: column;
-float: left;
-margin-left: 10rem;
-margin-top: 5rem;
 }
 
 .footer-logo {
@@ -335,14 +327,6 @@ margin-top: 5rem;
   font-family: Caveat, Roboto, sans-serif;
 }
 
-.links, .social {
-  display: flex;
-  flex-direction: column;
-  float: left;
-  margin-top: 5rem;
-  margin-left: 10rem;
-  margin-right: 5rem;
-}
 
 #links a {
   font-size: 1.8rem;
